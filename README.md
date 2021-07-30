@@ -16,7 +16,7 @@ Simple Style (`infra_dcr_simple "1"`):
 
 ## How to Install:
 
-- Download the latest release from here: *TBA*
+- Clone the repository by hitting the big green download code button at the top.
 - Extract the ZIP file to your game-directory folder (Eg: csgo/) on your server.
 
 ## How to Configure:
