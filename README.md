@@ -1,6 +1,6 @@
 # Infra's Simple Discord Chat Relay for SourceMod
 
-Simple SourceMod plugin that logs chats to Discord via webhooks. Not everything needs to be complicated!
+Simple SourceMod plugin that logs chats to Discord via webhooks. Not everything needs to be complicated! Tested on: CS:GO.
 
 ## Webhook Styles:
 
