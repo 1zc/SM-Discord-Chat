@@ -33,7 +33,7 @@ public void OnPluginStart()
     AutoExecConfig(true, "Infra-DiscordChat");
 }
 
-public void OnMapStart()
+public void OnConfigsExecuted()
 {
     if (httpClient != null)
     	delete httpClient;
