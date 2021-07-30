@@ -33,6 +33,14 @@ public void OnPluginStart()
     AutoExecConfig(true, "Infra-DiscordChat");
 }
 
+public void OnMapStart()
+{
+    if (httpClient != null)
+    	delete httpClient;
+    
+    httpClient = new HTTPClient("https://api.steampowered.com");
+}
+
 public void OnClientPostAdminCheck(int client)
 {
     GetProfilePic(client);
@@ -180,7 +188,6 @@ void GetProfilePic(int client)
     }
 
     Format(szRequestBuffer, sizeof szRequestBuffer, "ISteamUser/GetPlayerSummaries/v0002/?key=%s&steamids=%s&format=json", szAPIKey, szSteamID);
-    httpClient = new HTTPClient("https://api.steampowered.com");
     httpClient.Get(szRequestBuffer, GetProfilePicCallback, client);
 }
 
